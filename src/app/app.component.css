@@ -1,0 +1,21 @@
+.main {
+  height: 900px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.selector-card {
+  display: flex;
+  align-items: center;
+  cursor: move;
+  width: max-content;
+  .selector-card-icon {
+    background-color: #77d2ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

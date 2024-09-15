@@ -1,0 +1,14 @@
+<div #ref class="item-card">
+  <div (click)="remove()" class="item-close"></div>
+  <div (mousedown)="resize($event)" class="item-resize"></div>
+  <div class="item-content" (mousedown)="move($event)">
+    <div class="item-content-photo">
+      <img class="image" [src]="config.image" alt="" />
+    </div>
+    <div class="item-content-text">
+      <div *ngFor="let item of data?.text">
+        {{ item.label }}: {{ item.value }}
+      </div>
+    </div>
+  </div>
+</div>
